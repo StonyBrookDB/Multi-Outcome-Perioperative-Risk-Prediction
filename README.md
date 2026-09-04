@@ -63,6 +63,9 @@ feature_alignment/
 docs/
   harmonization.md     predictor availability and coding differences across
                        NSQIP years and cohorts, and how each was handled
+  Table S1_TRIPOD+AI Checklist.docx
+                       completed TRIPOD+AI reporting checklist for the
+                       manuscript
 ```
 
 Neither arm is self-contained. Both add the repository root to `sys.path` and
