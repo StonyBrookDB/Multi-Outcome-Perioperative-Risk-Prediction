@@ -20,8 +20,10 @@ logs/
 *.bin
 *.safetensors
 
-# Exception: the frozen chunk plan is configuration, not data.
+# Exceptions: variable metadata and configuration, not patient data.
 !puf_models/text_encoder/chunk_plan.json
+!docs/harmonization_table.csv
+!docs/puf73_build_spec.csv
 
 # Internal planning documents
 PLAN.md

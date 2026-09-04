@@ -41,6 +41,11 @@ Sixty-nine of the 73 prespecified variables have observed values and are
 instantiated as tabular model inputs; all 73 field slots are serialized to text
 for the encoder arm, with the remaining four written as `undefined`.
 
+Variable availability and coding changed across NSQIP annual files and between
+cohorts. [`docs/harmonization.md`](docs/harmonization.md) is the crosswalk, with
+machine-readable copies in `docs/harmonization_table.csv` and
+`docs/puf73_build_spec.csv`.
+
 ## Layout
 
 ```
@@ -55,6 +60,9 @@ puf_models/
 feature_alignment/
   lib/prep_apply.py    apply-only preprocessing; fitted parameters are never
                        re-fitted on evaluation data
+docs/
+  harmonization.md     predictor availability and coding differences across
+                       NSQIP years and cohorts, and how each was handled
 ```
 
 Neither arm is self-contained. Both add the repository root to `sys.path` and
