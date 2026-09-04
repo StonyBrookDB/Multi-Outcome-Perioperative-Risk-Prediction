@@ -1,0 +1,40 @@
+# ---------------------------------------------------------------------------
+# Data and results are NEVER committed.
+#
+# The ACS NSQIP Participant Use File is distributed under a Data Use Agreement
+# and is not redistributable. Neither the PUF, the derived 73-column feature
+# build, the single-institution cohort, nor any model output belongs in this
+# repository.
+# ---------------------------------------------------------------------------
+results/
+outputs*/
+logs/
+*.parquet
+*.csv
+*.pkl
+*.joblib
+*.npy
+*.npz
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Exception: the frozen chunk plan is configuration, not data.
+!puf_models/text_encoder/chunk_plan.json
+
+# Internal planning documents
+PLAN.md
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+*.egg-info/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
